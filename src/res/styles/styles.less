@@ -57,11 +57,14 @@ p {
     height: 100vh;
 }
 
+.page {
+    min-height: ~"calc(100vh - 64px )";
+}
+
 // CUSTOM
 .content {
     width:100%;
     max-width: 1200px;
-    padding: 24px;
 }
 
 .circle {
@@ -93,4 +96,9 @@ p {
 
 .logo {
     width: 128px;
+}
+
+// override
+.ant-menu-horizontal {
+    border-bottom: 0!important;
 }

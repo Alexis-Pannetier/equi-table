@@ -7,7 +7,7 @@ export class Screen extends Component {
         return (
             <Row justify='center' align='middle' {...this.props}>
                 <Col>
-                    <Row className='content' justify='center' align='middle' gutter={[0, 32]}>
+                    <Row className='content' justify='center' align='middle' style={{ padding: '50px' }}>
                         {children}
                     </Row>
                 </Col>
