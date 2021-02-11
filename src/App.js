@@ -146,9 +146,7 @@ function App() {
 
       <Screen id='screen-4' className='bg-plateau' style={{ minHeight: '300px' }}>
         <Col span={24}>
-          <Row justify='center'>
-            <h2 style={{ color: 'white' }}>Rejoignez la communauté !</h2>
-          </Row>
+          <h2 className='center' style={{ color: 'white' }}>Rejoignez la communauté !</h2>
         </Col>
         <Col span={24}>
           <Row justify='center'>
@@ -160,7 +158,7 @@ function App() {
       <Screen id='screen-5' style={{ minHeight: '600px' }}>
         <Col>
           <Row>
-            <h2>Ils vous donnent leur avis !</h2>
+            <h2 className='center'>Ils vous donnent leur avis !</h2>
           </Row>
         </Col>
 
@@ -169,10 +167,10 @@ function App() {
 
             <Col span={10}>
               <Card className='dark'>
-                <Row justify='center' align='middle' gutter={[8, 16]}>
+                <Row justify='center' align='middle' gutter={[8, 16]} className='center'>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
-                      <img className='circle' src={avis1} style={{ maxWidth: '120px' }} alt='avis 1' />
+                      <img className='circle' src={avis1} style={{ maxWidth: '100px' }} alt='avis 1' />
                     </Row>
 
                     <Row justify='center' align='middle'>
@@ -186,7 +184,7 @@ function App() {
                   </Col>
 
                   <Col xl={15} lg={12} md={24}>
-                    <p>“ J’ai trouvé tous les produits que je souhaitais trouver à des prix incroyables !! Je recommande !”</p>
+                    <p>“J’ai trouvé tous les produits que je souhaitais trouver à des prix incroyables !! Je recommande !”</p>
                   </Col>
                 </Row>
               </Card>
@@ -194,10 +192,10 @@ function App() {
 
             <Col span={10}>
               <Card className='dark'>
-                <Row justify='center' align='middle' gutter={[8, 16]}>
+                <Row justify='center' align='middle' gutter={[8, 16]} className='center'>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
-                      <img className='circle' src={avis2} style={{ maxWidth: '120px' }} alt='avis 2' />
+                      <img className='circle' src={avis2} style={{ maxWidth: '100px' }} alt='avis 2' />
                     </Row>
 
                     <Row justify='center' align='middle'>
@@ -209,7 +207,7 @@ function App() {
                     </Row>
                   </Col>
                   <Col xl={15} lg={12} md={24}>
-                    <p>“ Grâce à Equi’table, je peux offrir à ma fille de la nourriture saine et bonne. Avant, c’était toujours compliqué en fin de mois”</p>
+                    <p>“Grâce à Equi’table, je peux offrir à ma fille de la nourriture saine et bonne. Avant, c’était toujours compliqué en fin de mois”</p>
                   </Col>
                 </Row>
               </Card>
@@ -223,7 +221,7 @@ function App() {
         <Row justify='center' align='middle' gutter={gutter}>
           <Col>
             <Row>
-              <h3 className='white'>Profitez de 5% de réduction en devenant béta-testeur</h3>
+              <h3 className='white center'>Profitez de 5% de réduction en devenant béta-testeur</h3>
             </Row>
           </Col>
           <Col span={24}>
@@ -263,7 +261,7 @@ function App() {
             <Col span={6}>
               <Row justify='center' align='middle' gutter={gutter}>
                 <Col span={24}>
-                  <p>Suivez-nous sur les réseaux sociaux !</p>
+                  <p className='center'>Suivez-nous sur les réseaux sociaux !</p>
                 </Col>
                 <Col span={24}>
                   <Row justify='space-around'>
