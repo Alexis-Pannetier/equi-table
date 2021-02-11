@@ -4,7 +4,7 @@
 import 'antd/dist/antd.less';
 import './res/styles/styles.less';
 
-import { Button, Card, Col, Divider, Input, Layout, Menu, Rate, Row } from 'antd';
+import { Button, Card, Col, Divider, Input, Layout, Menu, message, Rate, Row } from 'antd';
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
 
 import { Screen } from './Screen/Screen';
@@ -18,6 +18,10 @@ import personne3 from './res/images/personne3.png';
 import personne4 from './res/images/personne4.png';
 import avis1 from './res/images/avis1.png';
 import avis2 from './res/images/avis2.png';
+
+function handleClick() {
+  message.success("Site Web Demo: Vous avez contribué au projet !");
+}
 
 function App() {
   const gutter = [24, 24];
@@ -69,7 +73,7 @@ function App() {
 
               <Col span={24}>
                 <Row justify='center'>
-                  <Button>Devenez Beta-testeur</Button>
+                  <Button onClick={handleClick}>Devenez Beta-testeur</Button>
                 </Row>
               </Col>
             </Row>
@@ -140,7 +144,7 @@ function App() {
         </Col>
         <Col span={24}>
           <Row justify='center'>
-            <Button>Devenez beta-testeur</Button>
+            <Button onClick={handleClick}>Devenez beta-testeur</Button>
           </Row>
         </Col>
       </Screen>
@@ -220,7 +224,7 @@ function App() {
           </Col>
           <Col span={24}>
             <Row justify='center' align='middle'>
-              <Button>S'inscrire</Button>
+              <Button onClick={handleClick}>S'inscrire</Button>
             </Row>
           </Col>
         </Row>
