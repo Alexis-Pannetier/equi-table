@@ -169,7 +169,7 @@ function App() {
 
             <Col span={10}>
               <Card className='dark'>
-                <Row justify='center' align='middle'>
+                <Row justify='center' align='middle' gutter={[8, 16]}>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
                       <img className='circle' src={avis1} style={{ maxWidth: '120px' }} alt='avis 1' />
@@ -194,7 +194,7 @@ function App() {
 
             <Col span={10}>
               <Card className='dark'>
-                <Row justify='center' align='middle'>
+                <Row justify='center' align='middle' gutter={[8, 16]}>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
                       <img className='circle' src={avis2} style={{ maxWidth: '120px' }} alt='avis 2' />
@@ -206,7 +206,6 @@ function App() {
 
                     <Row justify='center' align='middle'>
                       <p style={{ fontSize: '12px' }}>En reconversion professionnelle</p>
-
                     </Row>
                   </Col>
                   <Col xl={15} lg={12} md={24}>
