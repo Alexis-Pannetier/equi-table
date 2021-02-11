@@ -72,7 +72,7 @@ function App() {
               </Col>
 
               <Col span={24}>
-                <Row justify='center'>
+                <Row md={{ justify: 'center' }}>
                   <Button onClick={handleClick}>Devenez Beta-testeur</Button>
                 </Row>
               </Col>
@@ -211,11 +211,15 @@ function App() {
       </Screen>
 
       <Screen id='screen-6' className='bg-platfin' style={{ minHeight: '500px' }}>
-        <Row gutter={gutter}>
+        <Row justify='center' align='middle' gutter={gutter}>
           <Col>
-            <Row justify='center' align='middle'>
-              <h2 className='white'>Profitez de 5% de réduction en devenant béta-testeur</h2>
-            </Row>
+            {/* <Row justify='center' align='middle'>
+              <Col> */}
+            <h2 className='white'>
+              Profitez de 5% de réduction en devenant béta-testeur
+              </h2>
+            {/* </Col>
+            </Row> */}
           </Col>
           <Col span={24}>
             <Row justify='center' align='middle'>
@@ -231,9 +235,9 @@ function App() {
       </Screen>
 
       <Layout.Footer id='footer' className='white'>
-        <Row justify='center' align='middle'>
+        <Row justify='center' align='middle' >
           <Col span={24} style={{ maxWidth: '1200px' }}>
-            <Row className='content' justify='space-between' style={{ fontSize: '18px' }}>
+            <Row className='content' justify='space-between' align='middle' gutter={[32, 32]} style={{ fontSize: '18px' }}>
 
               <Col span={6}>
                 <Row gutter={gutter}>
@@ -253,7 +257,7 @@ function App() {
               </Col>
 
               <Col span={6}>
-                <Row justify='end' gutter={gutter}>
+                <Row justify='end' align='middle' gutter={gutter}>
                   <Col span={24}>
                     <p>Suivez-nous sur les réseaux sociaux !</p>
                   </Col>
