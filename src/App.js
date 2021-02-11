@@ -50,7 +50,7 @@ function App() {
 
       <Screen id='screen-1' justify='space-around' align='middle' className='page'>
 
-        <Row align='middle'>
+        <Row align='middle' gutter={gutter}>
           <Col lg={14} md={24}>
             <Row gutter={gutter}>
 
@@ -66,13 +66,21 @@ function App() {
                     <Rate allowHalf defaultValue={4} disabled />
                   </Col>
                   <Col>
-                    <span className='bold' >80% des clients sont satisfaits !</span>
+                    <span className='bold'>80% des clients sont satisfaits !</span>
                   </Col>
                 </Row>
               </Col>
 
-              <Col span={24}>
-                <Row md={{ justify: 'center' }}>
+              {/* Small screen */}
+              <Col lg={0} md={24} sm={24} xs={24}>
+                <Row justify='center'>
+                  <Button onClick={handleClick}>Devenez Beta-testeur</Button>
+                </Row>
+              </Col>
+
+              {/* Large screen */}
+              <Col lg={24} md={0} sm={0} xs={0}>
+                <Row >
                   <Button onClick={handleClick}>Devenez Beta-testeur</Button>
                 </Row>
               </Col>
@@ -164,16 +172,17 @@ function App() {
                 <Row justify='center' align='middle'>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
-                      <Col>
-                        <img className='circle' src={avis1} style={{ maxWidth: '120px' }} alt='avis 1' />
-                      </Col>
-                      <Col span={24}>
-                        <p>Elise Watz</p>
-                      </Col>
-                      <Col span={24}>
-                        <p style={{ fontSize: '12px' }}>Étudiante en droit social</p>
-                      </Col>
+                      <img className='circle' src={avis1} style={{ maxWidth: '120px' }} alt='avis 1' />
                     </Row>
+
+                    <Row justify='center' align='middle'>
+                      <p>Elise Watz</p>
+                    </Row>
+
+                    <Row justify='center' align='middle'>
+                      <p style={{ fontSize: '12px' }}>Étudiante en droit social</p>
+                    </Row>
+
                   </Col>
 
                   <Col xl={15} lg={12} md={24}>
@@ -188,15 +197,16 @@ function App() {
                 <Row justify='center' align='middle'>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
-                      <Col>
-                        <img className='circle' src={avis2} style={{ maxWidth: '120px' }} alt='avis 2' />
-                      </Col>
-                      <Col span={24}>
-                        <p>Jeanne Corma</p>
-                      </Col>
-                      <Col span={24}>
-                        <p style={{ fontSize: '12px' }}>En reconversion professionnelle</p>
-                      </Col>
+                      <img className='circle' src={avis2} style={{ maxWidth: '120px' }} alt='avis 2' />
+                    </Row>
+
+                    <Row justify='center' align='middle'>
+                      <p>Jeanne Corma</p>
+                    </Row>
+
+                    <Row justify='center' align='middle'>
+                      <p style={{ fontSize: '12px' }}>En reconversion professionnelle</p>
+
                     </Row>
                   </Col>
                   <Col xl={15} lg={12} md={24}>
@@ -213,13 +223,9 @@ function App() {
       <Screen id='screen-6' className='bg-platfin' style={{ minHeight: '500px' }}>
         <Row justify='center' align='middle' gutter={gutter}>
           <Col>
-            {/* <Row justify='center' align='middle'>
-              <Col> */}
-            <h2 className='white'>
-              Profitez de 5% de réduction en devenant béta-testeur
-              </h2>
-            {/* </Col>
-            </Row> */}
+            <Row>
+              <h3 className='white'>Profitez de 5% de réduction en devenant béta-testeur</h3>
+            </Row>
           </Col>
           <Col span={24}>
             <Row justify='center' align='middle'>
@@ -234,57 +240,56 @@ function App() {
         </Row>
       </Screen>
 
-      <Layout.Footer id='footer' className='white'>
-        <Row justify='center' align='middle' >
-          <Col span={24} style={{ maxWidth: '1200px' }}>
-            <Row className='content' justify='space-between' align='middle' gutter={[32, 32]} style={{ fontSize: '18px' }}>
+      <Layout.Footer>
+        <Screen id='footer' className='white'>
+          <Row className='content' justify='space-between' align='middle' gutter={[0, 64]} style={{ fontSize: '18px' }}>
 
-              <Col span={6}>
-                <Row gutter={gutter}>
-                  <Col span={24}>
-                    <a href='#screen-2'>À propos de nous</a>
-                  </Col>
-                  <Col span={24}>
-                    <a href='/'>Paiement sécurisé</a>
-                  </Col>
-                  <Col span={24}>
-                    <a href='#screen-6'>Nous contacter</a>
-                  </Col>
-                  <Col span={24}>
-                    <a href='/'>CGU</a>
-                  </Col>
-                </Row>
-              </Col>
+            <Col span={6}>
+              <Row gutter={gutter}>
+                <Col span={24}>
+                  <a href='#screen-2'>À propos de nous</a>
+                </Col>
+                <Col span={24}>
+                  <a href='/'>Paiement sécurisé</a>
+                </Col>
+                <Col span={24}>
+                  <a href='#screen-6'>Nous contacter</a>
+                </Col>
+                <Col span={24}>
+                  <a href='/'>CGU</a>
+                </Col>
+              </Row>
+            </Col>
 
-              <Col span={6}>
-                <Row justify='end' align='middle' gutter={gutter}>
-                  <Col span={24}>
-                    <p>Suivez-nous sur les réseaux sociaux !</p>
-                  </Col>
-                  <Col span={24}>
-                    <Row justify='space-around'>
-                      <Col>
-                        <FacebookOutlined className='social-network' />
-                      </Col>
-                      <Col>
-                        <InstagramOutlined className='social-network' />
-                      </Col>
-                      <Col>
-                        <TwitterOutlined className='social-network' />
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
+            <Col span={6}>
+              <Row justify='center' align='middle' gutter={gutter}>
+                <Col span={24}>
+                  <p>Suivez-nous sur les réseaux sociaux !</p>
+                </Col>
+                <Col span={24}>
+                  <Row justify='space-around'>
+                    <Col>
+                      <FacebookOutlined className='social-network' />
+                    </Col>
+                    <Col>
+                      <InstagramOutlined className='social-network' />
+                    </Col>
+                    <Col>
+                      <TwitterOutlined className='social-network' />
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Col>
 
-            </Row>
+            <Col span={24}>
+              <Row justify='center'>
+                <p style={{ fontSize: '16px' }}>Copyright 2021 - Equi’table | Mentions légales</p>
+              </Row>
+            </Col>
+          </Row>
 
-            <Row justify='center'>
-              <p style={{ fontSize: '16px' }}>Copyright 2021 - Equi’table | Mentions légales</p>
-            </Row>
-
-          </Col>
-        </Row>
+        </Screen>
       </Layout.Footer>
 
     </Layout >
