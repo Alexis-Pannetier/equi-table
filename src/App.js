@@ -139,7 +139,7 @@ function App() {
 
         <Col lg={12} md={24}>
           <Row justify='center'>
-            <img src={plat} alt='plat cuisiné' />
+            <img src={plat} alt='plat cuisiné' style={{ maxWidth: '100vw' }} />
           </Row>
         </Col>
       </Screen>
@@ -163,10 +163,10 @@ function App() {
         </Col>
 
         <Col>
-          <Row justify='space-around'>
+          <Row justify='space-around' gutter={gutter}>
 
-            <Col span={10}>
-              <Card className='dark'>
+            <Col md={12} sm={24}>
+              <Card>
                 <Row justify='center' align='middle' gutter={[8, 16]} className='center'>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
@@ -190,8 +190,8 @@ function App() {
               </Card>
             </Col>
 
-            <Col span={10}>
-              <Card className='dark'>
+            <Col md={12} sm={24}>
+              <Card>
                 <Row justify='center' align='middle' gutter={[8, 16]} className='center'>
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
@@ -239,9 +239,9 @@ function App() {
 
       <Layout.Footer>
         <Screen id='footer' className='white'>
-          <Row className='content' justify='space-between' align='middle' gutter={[0, 64]} style={{ fontSize: '18px' }}>
+          <Row justify='space-between' align='middle' gutter={[0, 64]} style={{ fontSize: '18px' }}>
 
-            <Col span={6}>
+            <Col lg={6} md={12} sm={24}>
               <Row gutter={gutter}>
                 <Col span={24}>
                   <a href='#screen-2'>À propos de nous</a>
@@ -258,7 +258,7 @@ function App() {
               </Row>
             </Col>
 
-            <Col span={6}>
+            <Col lg={6} md={12} sm={24}>
               <Row justify='center' align='middle' gutter={gutter}>
                 <Col span={24}>
                   <p className='center'>Suivez-nous sur les réseaux sociaux !</p>
