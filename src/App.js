@@ -26,17 +26,21 @@ function App() {
 
       <Layout.Header >
         <Row justify='space-between'>
-          <a>
-            <img src={logoHeader} href='/' className='logo' />
-          </a>
-          <Menu mode="horizontal">
-            <Menu.Item key="about-us">
-              <a href='#screen-2'>À propos de nous</a>
-            </Menu.Item>
-            <Menu.Item key="contact">
-              <a href='#screen-6'>Contact</a>
-            </Menu.Item>
-          </Menu>
+          <Col>
+            <a>
+              <img src={logoHeader} href='/' className='logo' />
+            </a>
+          </Col>
+          <Col>
+            <Menu mode="horizontal">
+              <Menu.Item key="about-us">
+                <a href='#screen-2'>À propos de nous</a>
+              </Menu.Item>
+              <Menu.Item key="contact">
+                <a href='#screen-6'>Contact</a>
+              </Menu.Item>
+            </Menu>
+          </Col>
         </Row>
       </Layout.Header>
 
@@ -189,7 +193,6 @@ function App() {
                       <Col span={24}>
                         <p style={{ fontSize: '12px' }}>En reconversion professionnelle</p>
                       </Col>
-                      {/* </> */}
                     </Row>
                   </Col>
                   <Col xl={15} lg={12} md={24}>
