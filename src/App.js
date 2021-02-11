@@ -4,7 +4,7 @@
 import 'antd/dist/antd.less';
 import './res/styles/styles.less';
 
-import { Button, Card, Col, Divider, Input, Layout, Menu, message, Rate, Row } from 'antd';
+import { Button, Card, Col, Input, Layout, Menu, message, Rate, Row } from 'antd';
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
 
 import { Screen } from './Screen/Screen';
@@ -31,8 +31,8 @@ function App() {
       <Layout.Header >
         <Row justify='space-between'>
           <Col>
-            <a>
-              <img src={logoHeader} href='/' className='logo' />
+            <a href='/'>
+              <img src={logoHeader} href='/' className='logo' alt='logo' />
             </a>
           </Col>
           <Col>
@@ -81,7 +81,7 @@ function App() {
 
           <Col lg={10} md={24}>
             <Row justify='center'>
-              <img src={phone} />
+              <img src={phone} alt={phone} />
             </Row>
           </Col>
         </Row>
@@ -94,22 +94,22 @@ function App() {
           <Row justify='center' align='middle' gutter={gutter}>
             <Col span={12}>
               <Row justify='center'>
-                <img className='circle' src={personne1} />
+                <img className='circle' src={personne1} alt='people 1' />
               </Row>
             </Col>
             <Col span={12}>
               <Row justify='center'>
-                <img className='circle' src={personne2} />
+                <img className='circle' src={personne2} alt='people 2' />
               </Row>
             </Col>
             <Col span={12}>
               <Row justify='center'>
-                <img className='circle' src={personne3} />
+                <img className='circle' src={personne3} alt='people 3' />
               </Row>
             </Col>
             <Col span={12}>
               <Row justify='center'>
-                <img className='circle' src={personne4} />
+                <img className='circle' src={personne4} alt='people 4' />
               </Row>
             </Col>
           </Row>
@@ -117,7 +117,7 @@ function App() {
 
         <Col lg={14} md={24}>
           <h2>Une application qui prend soin de vous et de vos finances</h2>
-          <p>Nos utilisateurs disposent de paniers à prix réduits grâce à note politique d'achat en gros via des circuits-courts !</p>
+          <p>Nos utilisateurs disposent de paniers à prix réduits grâce à note politique d'achat en gros via des circuits courts !</p>
         </Col>
 
       </Screen>
@@ -125,13 +125,13 @@ function App() {
       <Screen id='screen-3' style={{ minHeight: '750px' }}>
         <Col lg={12} md={24}>
           <h2>Faites vos courses à moindre prix avec des produits de qualité</h2>
-          <p>Nos paniers de produits sont composés de produits de votre région et sont à disposition dans des entrepots situés proche de chez-vous !
+          <p>Nos paniers de produits sont composés de produits de votre région et sont à disposition dans des entrepôts situés proche de chez-vous !
           Grâce à l’achat de ces produits en grande quantité, nous pouvons vous les proposer à un prix bas.</p>
         </Col>
 
         <Col lg={12} md={24}>
           <Row justify='center'>
-            <img src={plat} />
+            <img src={plat} alt='plat cuisiné' />
           </Row>
         </Col>
       </Screen>
@@ -165,7 +165,7 @@ function App() {
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
                       <Col>
-                        <img className='circle' src={avis1} style={{ maxWidth: '120px' }} />
+                        <img className='circle' src={avis1} style={{ maxWidth: '120px' }} alt='avis 1' />
                       </Col>
                       <Col span={24}>
                         <p>Elise Watz</p>
@@ -177,7 +177,7 @@ function App() {
                   </Col>
 
                   <Col xl={15} lg={12} md={24}>
-                    <p>“ J’ai trouvé tous les produits que je souhaitait trouver à des prix incroyables !! Je recomande !”</p>
+                    <p>“ J’ai trouvé tous les produits que je souhaitais trouver à des prix incroyables !! Je recommande !”</p>
                   </Col>
                 </Row>
               </Card>
@@ -189,7 +189,7 @@ function App() {
                   <Col xl={9} lg={12} md={24}>
                     <Row justify='center' align='middle'>
                       <Col>
-                        <img className='circle' src={avis2} style={{ maxWidth: '120px' }} />
+                        <img className='circle' src={avis2} style={{ maxWidth: '120px' }} alt='avis 2' />
                       </Col>
                       <Col span={24}>
                         <p>Jeanne Corma</p>
@@ -238,7 +238,7 @@ function App() {
               <Col span={6}>
                 <Row gutter={gutter}>
                   <Col span={24}>
-                    <a href='#screen-2'>A propos de nous</a>
+                    <a href='#screen-2'>À propos de nous</a>
                   </Col>
                   <Col span={24}>
                     <a href='/'>Paiement sécurisé</a>
