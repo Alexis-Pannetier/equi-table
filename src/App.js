@@ -26,26 +26,20 @@ function handleClick() {
 function App() {
   const gutter = [24, 24];
   return (
-    <Layout className="App" >
+    <Layout style={{ minWidth: '360px' }} >
 
       <Layout.Header >
-        <Row justify='space-between'>
-          <Col>
-            <a href='/'>
-              <img src={logoHeader} href='/' className='logo' alt='logo' />
-            </a>
-          </Col>
-          <Col>
-            <Menu mode="horizontal">
-              <Menu.Item key="about-us">
-                <a href='#screen-2'>À propos de nous</a>
-              </Menu.Item>
-              <Menu.Item key="contact">
-                <a href='#screen-6'>Contact</a>
-              </Menu.Item>
-            </Menu>
-          </Col>
-        </Row>
+        <a href='/'>
+          <img src={logoHeader} href='/' className='logo' alt='logo' />
+        </a>
+        <Menu mode="horizontal" style={{ float: 'right' }}>
+          <Menu.Item key="about-us">
+            <a href='#screen-2'>À propos de nous</a>
+          </Menu.Item>
+          <Menu.Item key="contact">
+            <a href='#screen-6'>Contact</a>
+          </Menu.Item>
+        </Menu>
       </Layout.Header>
 
       <Screen id='screen-1' justify='space-around' align='middle' className='page'>
