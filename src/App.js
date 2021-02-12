@@ -208,7 +208,7 @@ function App() {
                   </Col>
 
                   <Col xl={15} lg={12} md={24}>
-                    <p>“Cette application pourrait nous permettre de mieux manger plus facilement même avec un petit budget"”</p>
+                    <p>“Cette application pourrait nous permettre de mieux manger plus facilement même avec un petit budget”</p>
                   </Col>
                 </Row>
               </Card>
