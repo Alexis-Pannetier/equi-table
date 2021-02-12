@@ -124,7 +124,7 @@ function App() {
         </Col>
 
         <Col lg={14} md={24}>
-          <h2>Une application qui prend soin de vous et de vos finances</h2>
+          <h2>Une application qui vous aide à manger localement et sainement en contrôlant votre budget</h2>
           <p>Nos utilisateurs disposent de paniers à prix réduits grâce à note politique d'achat en gros via des circuits courts !</p>
         </Col>
 
@@ -158,7 +158,7 @@ function App() {
       <Screen id='screen-5' style={{ minHeight: '600px' }}>
         <Col>
           <Row>
-            <h2 className='center'>Ils vous donnent leur avis !</h2>
+            <h2 className='center'>Nos utilisateurs disposent de paniers à prix fixes et réduits</h2>
           </Row>
         </Col>
 
@@ -169,22 +169,13 @@ function App() {
               <Card>
                 <Row justify='center' align='middle' gutter={[8, 16]} className='center'>
                   <Col xl={9} lg={12} md={24}>
-                    <Row justify='center' align='middle'>
-                      <img className='circle' src={avis1} style={{ maxWidth: '100px' }} alt='avis 1' />
-                    </Row>
-
-                    <Row justify='center' align='middle'>
-                      <p>Elise Watz</p>
-                    </Row>
-
-                    <Row justify='center' align='middle'>
-                      <p style={{ fontSize: '12px' }}>Étudiante en droit social</p>
-                    </Row>
-
+                    <img className='circle' src={avis1} style={{ maxWidth: '100px' }} alt='avis 1' />
+                    <p>Elise Watz</p>
+                    <p style={{ fontSize: '12px' }}>Étudiante en droit social</p>
                   </Col>
 
                   <Col xl={15} lg={12} md={24}>
-                    <p>“J’ai trouvé tous les produits que je souhaitais trouver à des prix incroyables !! Je recommande !”</p>
+                    <p>“Cette application pourrait nous permettre de mieux manger plus facilement même avec un petit budget"”</p>
                   </Col>
                 </Row>
               </Card>
@@ -194,20 +185,13 @@ function App() {
               <Card>
                 <Row justify='center' align='middle' gutter={[8, 16]} className='center'>
                   <Col xl={9} lg={12} md={24}>
-                    <Row justify='center' align='middle'>
-                      <img className='circle' src={avis2} style={{ maxWidth: '100px' }} alt='avis 2' />
-                    </Row>
-
-                    <Row justify='center' align='middle'>
-                      <p>Jeanne Corma</p>
-                    </Row>
-
-                    <Row justify='center' align='middle'>
-                      <p style={{ fontSize: '12px' }}>En reconversion professionnelle</p>
-                    </Row>
+                    <img className='circle' src={avis2} style={{ maxWidth: '100px' }} alt='avis 2' />
+                    <p>Jeanne Corma</p>
+                    <p style={{ fontSize: '12px' }}>En reconversion professionnelle</p>
                   </Col>
+
                   <Col xl={15} lg={12} md={24}>
-                    <p>“Grâce à Equi’table, je peux offrir à ma fille de la nourriture saine et bonne. Avant, c’était toujours compliqué en fin de mois”</p>
+                    <p>“C'est compliqué de manger à la fin de chaque mois avec le prix des courses en grande surface, avec le concept "Equi'table", je n'aurais plus besoin de penser aux fins de mois”</p>
                   </Col>
                 </Row>
               </Card>
@@ -217,7 +201,7 @@ function App() {
         </Col>
       </Screen>
 
-      <Screen id='screen-6' className='bg-platfin' style={{ minHeight: '500px' }}>
+      <Screen id='screen-6' className='bg-plat-cuisine' style={{ minHeight: '500px' }}>
         <Row justify='center' align='middle' gutter={gutter}>
           <Col>
             <Row>
