@@ -6,6 +6,7 @@ import './res/styles/styles.less';
 
 import { Button, Card, Col, Input, Layout, Menu, message, Rate, Row } from 'antd';
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
+import confetti from 'canvas-confetti';
 
 import { Screen } from './Screen/Screen';
 
@@ -21,6 +22,44 @@ import avis2 from './res/images/avis2.png';
 
 function handleClick() {
   message.success("Site Web Demo: Vous avez contribué au projet !");
+  playConfetti();
+}
+
+function fire(particleRatio, opts) {
+  var count = 200;
+  var defaults = {
+    origin: { y: 0.7 }
+  };
+  confetti(Object.assign({}, defaults, opts, {
+    particleCount: Math.floor(count * particleRatio)
+  }));
+}
+
+function playConfetti() {
+
+  fire(0.25, {
+    spread: 26,
+    startVelocity: 55,
+  });
+  fire(0.2, {
+    spread: 60,
+  });
+  fire(0.35, {
+    spread: 100,
+    decay: 0.91,
+    scalar: 0.8
+  });
+  fire(0.1, {
+    spread: 120,
+    startVelocity: 25,
+    decay: 0.92,
+    scalar: 1.2
+  });
+  fire(0.1, {
+    spread: 120,
+    startVelocity: 45,
+  });
+
 }
 
 function App() {
