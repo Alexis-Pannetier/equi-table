@@ -191,7 +191,7 @@ function App() {
                   </Col>
 
                   <Col xl={15} lg={12} md={24}>
-                    <p>“C'est compliqué de manger à la fin de chaque mois avec le prix des courses en grande surface, avec le concept "Equi'table", je n'aurais plus besoin de penser aux fins de mois”</p>
+                    <p>“C'est compliqué de manger à la fin de chaque mois avec le prix des courses en grande surface, grâce au concept "Equi'table", je n'aurais plus besoin de penser aux fins de mois”</p>
                   </Col>
                 </Row>
               </Card>
